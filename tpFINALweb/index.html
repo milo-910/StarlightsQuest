@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starlight quest</title>
+  <link rel="stylesheet" href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css" />
+  <!-- barra de navegacion -->
+  <nav class="no-border fixed split-nav col background-secondary">
+    <div class="nav-brand">
+      <h3><a href="#inicio">Starlight's Quest</a></h3>
+    </div>
+    <div class="collapsible">
+      <input id="collapsible1" type="checkbox" name="collapsible1">
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div class="bar4"></div>
+        <div class="bar5"></div>
+      </label>
+      <div class="collapsible-body">
+        <ul class="inline">
+          <li><a href="#jugar">Jugar</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#info">Informacion</a></li>
+          <li><a href="#creditos">Creditos</a></li>
+          <li><a href="#inspo">Inspiracion</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</head>
+
+<body>
+  <div class="paper container">
+    <!--banner-->
+    <div class="progress margin-bottom">
+      <div class="bar warning w-100" id="inicio"></div>
+    </div>
+    <h1 class="text-danger">Starlight's Quest</h1>
+    <h3 class="text-danger">Una aventura grafica interactiva</h3>
+    <div class="row flex-center">
+      <img src="1raIMAGEN.webp" class="no-border" alt="Un dibujo dramatico de Starlight Glimmer">
+    </div>
+
+    <div class="progress margin-bottom">
+      <div class="bar warning w-100" id="jugar"></div>
+    </div>
+
+    <!--modales del juego-->
+    <div class="row flex-spaces child-borders">
+      <label class="paper-btn margin btn-large btn-success" for="modal-3">Resumen</label>
+      <label class="paper-btn margin btn-large btn-danger" for="modal-1">Novela Grafica</label>
+      <label class="paper-btn margin btn-large btn-secondary" for="modal-2">Juego</label>
+    </div>
+    <!--Novela grafica modal-->
+    <input class="modal-state" id="modal-1" type="checkbox">
+    <div class="modal">
+      <label class="modal-bg background-primary" for="modal-1"></label>
+      <div class="modal-body">
+        <iframe src="TpFinalParte1\tpfinalparte1\index.html" frameborder="0" width="650" height="490"></iframe>
+        <label class="btn-close" for="modal-1">X</label>
+      </div>
+    </div>
+    <!--juego modal-->
+    <input class="modal-state" id="modal-2" type="checkbox">
+    <div class="modal">
+      <label class="modal-bg background-primary" for="modal-2"></label>
+      <div class="modal-body">
+        <iframe src="tpfinalparte2 - copia\index.html" frameborder="0" width="650" height="490"></iframe>
+        <label class="btn-close" for="modal-2">X</label>
+      </div>
+    </div>
+    <!--resumen modal-->
+    <input class="modal-state" id="modal-3" type="checkbox">
+    <div class="modal">
+      <label class="modal-bg background-primary" for="modal-3"></label>
+      <div class="modal-body">
+        <label class="btn-close" for="modal-3">X</label>
+        <h4 class="modal-title">Starlight's Quest</h4>
+        <h5 class="modal-subtitle">Una aventura grafica interactiva y un juego web.</h5>
+        <p class="modal-text">Starlight es la alumna de Twilight Sparkle, la princesa de la amistad y protagonista de la
+          serie My little pony: Friendship is magic. Dentro de la novela, ella aun esta viviendo en el castillo de la
+          amistad junto a su tutora y actualmente esta aprendiendo sobre amistad mientras intenta olvidar su pasado como
+          villana. La historia se divide por 4 caminos los cuales cada uno cuenta con un final bueno y con uno malo, el
+          destino de la protagonista queda en tus manos.</p>
+      </div>
+    </div>
+
+    <div class="progress margin-bottom">
+      <div class="bar warning w-100" id="info"></div>
+    </div>
+
+    <!--Finales del juego-->
+    <div class="row flex-center">
+
+      <div class="row sm-12 md-6 col">
+        <div class="card background-success" style="width: 20rem;">
+          <div class="card-body">
+            <img class="float-left" src="final-trixie.webp" alt="Starlight ayudando a Trixie" height="80px"
+              width="50px">
+            <h4 class="card-title text-success">Camino de Trixie</h4>
+            <h6 class="card-text">Starlight se hace amiga de una nueva pony en el spa, tiene que hacer una elección
+              decisiva sobre ella</h6>
+          </div>
+        </div>
+        <div class="card background-warning" style="width: 20rem;">
+          <div class="card-body">
+            <img class="float-left" src="Pantalla-4.webp" alt="Un fondo de ponyville" height="80px" width="50px">
+            <h4 class="card-title text-warning">Camino de Apple y Rainbow</h4>
+            <h6 class="card-text">Las chicas hacen una carrera mientras Starlight se frustra e intenta llamar su
+              atención.</h6>
+          </div>
+        </div>
+        <div class="card background-danger" style="width: 20rem;">
+          <div class="card-body">
+            <img class="float-left" src="pantalla-7.webp" alt="Un fondo de ponyville" height="80px" width="50px">
+            <h4 class="card-title text-danger">Camino de Pinkie y Flutter</h4>
+            <h6 class="card-text">Los animalitos se escapan y Starlight debe atraparlos, no termina teniendo un gran
+              desenlace.</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="card sm-12 md-6 col background-secondary" style="width: 20rem;">
+        <img src="final-verdadero.webp" alt="Todos los ponys ayudando a Stygian">
+        <div class="card-body">
+          <h4 class="card-title text-secondary">Camino de Twilight y Rarity</h4>
+          <h5 class="text-muted">Donde se desarrolla el juego</h5>
+          <p class="card-text">Starlight debe esquivar escombros y magia oscura del pony de las sombras hasta llegar con
+            Stygian, un muchacho atrapado dentro del ser de oscuridad. Hablan con el muchacho y logran convencerlo de
+            elegir el camino del bien. Starlight aprende una gran lección sobre la amistad.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="progress margin-bottom">
+      <div class="bar warning w-100" id="inspo"></div>
+    </div>
+    <!--Capitulos inspirados-->
+    <h2 class="text-danger">Capitulos en los cuales esta inspirado.</h2>
+    <div class="row">
+      <div class="sm-12 md-4 col">
+        <div class="card background-danger">
+          <img src="opcion-122.webp" alt="Screenshot del capitulo">
+
+          <div class="card-body">
+            <h4 class="card-title text-danger"> Juego de Sombras - Primera & Segunda Parte</h4>
+            <h5 class="card-subtitle">Temporada 7, cap 25&26</h5>
+            <p class="card-text">Es esta segunda parte, Star Swirl el Barbado y los otros Pilares del Antiguo Equestria
+              están de vuelta del limbo, y Twilight Sparkle y sus amigas deben trabajan con ellos para vencer al Poni de
+              las Sombras.</p>
+            <button class="btn-danger-outline"><a href="https://youtu.be/QuoqscS2kk4?si=cmCFdAbyNI_b6e8n">Ver
+                ahora!</a> </button>
+          </div>
+        </div>
+      </div>
+      <div class="sm-12 md-4 col">
+        <div class="card background-warning">
+          <img src="Captura-de-pantalla-2025-11-26-203502.webp" alt="Screenshot del capitulo">
+
+          <div class="card-body">
+            <h4 class="card-title text-warning">El camino de la amistad</h4>
+            <h5 class="card-subtitle">Temporada 8, cap 19</h5>
+            <p class="card-text">En este episodio, invitan a Trixie a llevar su show de magia a Arabia Herradurita, y
+              piensa que no hay nadie mejor para ir con ella que su gran y poderosa asistente Starlight Glimmer.</p>
+            <button class="btn-warning-outline"><a href="https://youtu.be/8rsDwk-8LDk?si=oyI7w2viv8vGm4zn"> Ver
+                ahora!</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="sm-12 md-4 col">
+        <div class="card background-success">
+          <img src="trixie-en-cañon.webp" alt="Screenshot del capitulo">
+
+          <div class="card-body">
+            <h4 class="card-title text-success">No hay Segundas Oportunidades</h4>
+            <h5 class="card-subtitle">Temporada 6, cap 6</h5>
+            <p class="card-text">Cuando Starlight Glimmer se hace amiga de Trixie, Twilight Sparkle lo desaprueba.</p>
+            <button class="btn-success-outline"><a href="https://youtu.be/78UyJdk5xGc?si=kqyfWNBwwM9uhI82"> Ver ahora!
+              </a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="progress margin-bottom">
+      <div class="bar warning w-100" id="proceso"></div>
+    </div>
+
+    <!--Proceso de la novela-->
+    <h2 class="text-danger">El proceso</h2>
+    <div class="row">
+      <div class="collapsible background-success">
+        <input id="collapsible5" type="radio" name="collapsible">
+        <label for="collapsible5">Userflow</label>
+        <div class="collapsible-body">
+          <span>El flujo que realiza el jugador durante la aventura grafica; dos caminos en los cuales UNO se divide en
+            otros 3; cada camino tiene tanto un final bueno como un final malo. Al final del dia todo se repite para que
+            Starlight tenga otra aventura. </span>
+          <img src="userflow.webp" alt="Flujo del camino">
+          <span><a href="https://drive.google.com/file/d/1EH41cyS4FQhd0p9ik77oq4RRAWYuZjsv/view?usp=sharing">Link para
+              ver completo</a> (Abrir con draw.io para ver con buena calidad) </span>
+        </div>
+      </div>
+      <div class="collapsible background-warning">
+        <input id="collapsible6" type="radio" name="collapsible">
+        <label for="collapsible6">Imagenes usadas</label>
+        <div class="collapsible-body">
+          <span>Para los fondos sacamos screenshots de la serie original; algunas screenshots son de los capitulos y
+            otras de la wiki.</span>
+          <div class="row flex-spaces">
+            <img src="TpFinalParte1\tpfinalparte1\data\PANTALLA1.png" height="200" width="200">
+            <img src="TpFinalParte1\tpfinalparte1\data\PANTALLA2.png" height="200" width="200">
+            <img src="TpFinalParte1\tpfinalparte1\data\biblioteca.jpg" height="200" width="200">
+            <img src="TpFinalParte1\tpfinalparte1\data\no_puede_terminar.png" height="200" width="200">
+            <img src="TpFinalParte1\tpfinalparte1\data\final_malo.png" height="200" width="200">
+            <img src="TpFinalParte1\tpfinalparte1\data\final_verdadero1.png" height="200" width="200">
+            <img src="TpFinalParte1\tpfinalparte1\data\final_verdadero3.png" height="200" width="200">
+            <img src="TpFinalParte1\tpfinalparte1\data\final_verdadero4.png" height="200" width="200">
+            <img src="TpFinalParte1\tpfinalparte1\data\PANTALLA7.png" height="200" width="200">
+            <img src="TpFinalParte1\tpfinalparte1\data\PANTALLA8.jpg" height="200" width="200">
+            <img src="TpFinalParte1\tpfinalparte1\data\PANTALLA3.png" height="200" width="200">
+            <img src="TpFinalParte1\tpfinalparte1\data\PANTALLA4.png" height="200" width="200">
+            <img src="TpFinalParte1\tpfinalparte1\data\PANTALLA5.png" height="200" width="200">
+            <img src="TpFinalParte1\tpfinalparte1\data\twi_habla_con_Star.png" height="200" width="200">
+            <img src="TpFinalParte1\tpfinalparte1\data\Cañon.png" height="200" width="200">
+            <img src="TpFinalParte1\tpfinalparte1\data\quimera.png" height="200" width="200">
+            <img src="TpFinalParte1\tpfinalparte1\data\publico.png" height="200" width="200">
+            <img src="TpFinalParte1\tpfinalparte1\data\GE1.png" height="200" width="200">
+            <img src="TpFinalParte1\tpfinalparte1\data\GE2.png" height="200" width="200">
+          </div>
+        </div>
+      </div>
+      <div class="collapsible background-danger">
+        <input id="collapsible7" type="radio" name="collapsible">
+        <label for="collapsible7">Dialogo</label>
+        <div class="collapsible-body">
+          <span>Usamos un documento de texto para el inicio y luego otros 4 para cada camino</span>
+          <div class="row flex-spaces">
+            <img src="textinicio.png" height="300" width="300" alt="Texto del inicio">
+            <img src="textflutter.png" height="300" width="300" alt="Texto del camino de Fluttershy y Pinkie Pie">
+            <img src="textrain.png" height="300" width="300" alt="Texto del camino de Rainbow Dash y Applejack">
+            <img src="txttwi.png" height="400" width="300" alt="Texto del camino de Twilight Sparkle y Rarit">
+            <img src="txttrixie.png" height="400" width="400" alt="Texto del camino del spa">
+          </div>
+        </div>
+      </div>
+      <div class="collapsible background-secondary">
+        <input id="collapsible8" type="radio" name="collapsible">
+        <label for="collapsible8">Sprites del juego</label>
+        <div class="collapsible-body">
+          <span>2 Sprites de animacion para Starlight, un sprite de magia y un sprite de piedra.</span>
+          <div class="row flex-spaces">
+            <img src="tpfinalparte2 - copia\data\sprite1.png" height="200" width="200" alt="Sprite 1 de Starlight">
+            <img src="tpfinalparte2 - copia\data\sprite2.png" height="200" width="200" alt="Sprite 2 de Starlight">
+            <img src="tpfinalparte2 - copia\data\piedra.png" height="200" width="250" alt="Imagen de la piedra">
+            <img src="tpfinalparte2 - copia\data\magia.png" height="200" width="300" alt="Imagen de la magia">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="progress margin-bottom">
+      <div class="bar warning w-100" id="creditos"></div>
+    </div>
+
+    <!--Creditos-->
+    <h2 class="flex-center text-danger"> Creditos</h2>
+    <div class="row flex-spaces tabs background-secondary">
+      <input id="tab1" type="radio" name="tabs" checked>
+      <label for="tab1">Alumnos</label>
+
+      <input id="tab2" type="radio" name="tabs">
+      <label for="tab2">Profesor</label>
+
+      <div class="content background-primary" id="content1">
+        <p>
+          Ornella Lucia Tullio
+        </p>
+        <p>
+          Milo Camilo Braidot
+        </p>
+      </div>
+      <div class="content background-primary" id="content2">
+        <p>
+          Matias Jauregui Lorda
+        </p>
+        <p>Comision 2</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
